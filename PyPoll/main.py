@@ -50,7 +50,7 @@ def create_result(candidates, total_vote):
 # write result to console and a text file
 def write_results(result):
     print(result)
-    with open("{:%B %d, %Y}".format(datetime.now()) + ".txt", "w") as file:
+    with open("{:%B %d, %Y}".format(datetime.now()) + " PyPoll.txt", "w") as file:
         file.write(result)
     
 # Main function to decide the flow and usage of other functions
